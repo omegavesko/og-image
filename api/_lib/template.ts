@@ -53,7 +53,7 @@ function getCss(fontSize: string) {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
-        padding: 50px 175px;
+        padding: 100px 175px;
     }
 
     code {
