@@ -27,7 +27,7 @@ export function parseRequest(req: IncomingMessage) {
     fileType: extension === "jpeg" ? extension : "png",
     text: decodeURIComponent(text),
     md: md === "1" || md === "true",
-    fontSize: fontSize || "96px",
+    fontSize: fontSize || "128px",
   };
 
   return parsedRequest;

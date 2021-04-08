@@ -7,7 +7,7 @@ const twOptions = { folder: "svg", ext: ".svg" };
 const emojify = (text: string) => twemoji.parse(text, twOptions);
 
 const rglr = readFileSync(
-  `${__dirname}/../_fonts/fira-sans-v11-latin-regular.woff2`
+  `${__dirname}/../_fonts/fira-sans-v11-latin-500.woff2`
 ).toString("base64");
 const bold = readFileSync(
   `${__dirname}/../_fonts/fira-sans-v11-latin-700.woff2`
@@ -51,10 +51,9 @@ function getCss(fontSize: string) {
         background-size: 100px 100px;
         height: 100vh;
         display: flex;
-        // text-align: center;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
-        padding: 0 150px;
+        padding: 50px 175px;
     }
 
     code {
